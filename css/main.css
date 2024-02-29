@@ -88,3 +88,21 @@ body {
   margin: 24px;
   height: 100%;
 }
+
+.test {
+  background-image: url("test.svg");
+}
+
+.chat {
+  display: flex;
+  /* フレックスボックスレイアウトを使用 */
+  align-items: center;
+  /* アイコンとテキストを中央揃えに */
+  gap: 8px;
+  /* アイコンとテキストの間隔 */
+  /* その他のスタイリング (背景色、パディング、ボーダーなど) */
+}
+
+.chat-icon {
+  /* アイコンのサイズ調整や色をここで指定 */
+}
