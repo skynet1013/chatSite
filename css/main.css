@@ -42,6 +42,7 @@ body {
   height: 56px;
   margin: 0 auto;
   align-items: center;
+  padding-left: 32px;
 }
 
 .flex {
@@ -54,21 +55,44 @@ body {
   padding: 24px 0;
 }
 
+.sidebarWrapper {
+  padding: 24px;
+}
+
 .sidebar {
-  width: 250px;
-  background-color: blueviolet;
+  width: 260px;
   padding: 16px;
   height: 100%;
 }
 
 .mainContent {
   flex-grow: 1;
-  background-color: brown;
+  background-color: #FFFFFF;
+  height: 100%;
+  padding: 24px;
+}
+
+.mainContentWrapper {
+  flex-grow: 1;
+  height: 100%;
+  padding: 24px;
 }
 
 .rightBar {
-  flex-grow: 1;
-  background-color: rgb(34, 158, 152);
+  background-color: #FFF;
+  height: 100%;
+  width: 338px;
+  padding: 24px;
+  border-radius: 0.25rem;
+}
+
+.rightBarWrapeer {
+  height: 100%;
+}
+
+.rightContent {
+  width: 100%;
+  padding: 16px;
 }
 
 .logo {
@@ -76,7 +100,20 @@ body {
 }
 
 .Button {
-  background-color: white;
+  display: flex;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  width: 100%;
+
+  border-radius: 0.75rem;
+  background: var(--Black, #2B2B2B);
+  color: #FFFFFF;
 }
 
 .body {
@@ -93,6 +130,16 @@ body {
   background-image: url("test.svg");
 }
 
+.title {
+  height: 2.75rem;
+}
+
+.chatWrapper {
+  padding: 16px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+
 .chat {
   display: flex;
   /* フレックスボックスレイアウトを使用 */
@@ -101,8 +148,46 @@ body {
   gap: 8px;
   /* アイコンとテキストの間隔 */
   /* その他のスタイリング (背景色、パディング、ボーダーなど) */
+  display: flex;
+  padding: 0.75rem;
+  align-items: flex-end;
+  gap: 0.5625rem;
+  align-self: stretch;
+  width: 100%;
+  border-bottom: 1px solid var(--gray004, #F7F7F7);
+  border: none;
+  background: var(--White, #FFF);
 }
 
-.chat-icon {
-  /* アイコンのサイズ調整や色をここで指定 */
+
+.chatContent {
+  display: flex;
+  padding: 0.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #F7F7F7;
+  height: 120px;
+  margin: 16px;
+  border: 1px solid var(--gray003, #ECECEC);
+  padding: 16px;
+}
+
+.chatContentme {
+  margin: 16px;
+  border-radius: 0.25rem;
+  border: 1px solid var(--gray003, #ECECEC);
+  background: var(--White, #FFF);
+  padding: 16px;
+}
+
+.chatContentWrapeer {
+  height: 100%;
+  width: 100%;
+}
+
+.inputText {
+  text-align: center;
+  height: 3.125rem;
+  border-radius: 1.875rem;
+  border: 1px solid var(--gray002, #A5A5A5);
 }
